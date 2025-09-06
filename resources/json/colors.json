@@ -1,67 +1,69 @@
-{ colors: {
-        'background-color': {
-            light: '#ffffff',
-            dark: '#121212',
+{ 
+    "colors": {
+        "background-color": {
+            "light": "#ffffff",
+            "dark": "#121212"
         },
 
-        'background-color-one': {
-            light: '#d5e1ed',
-            dark: '#1E1E1E',
+        "background-color-one": {
+            "light": "#d5e1ed",
+            "dark": "#1E1E1E"
         },
 
-        'background-color-two': {
-            light: '#aab5bf',
-            dark: '#303030',
+        "background-color-two": {
+            "light": "#aab5bf",
+            "dark": "#303030"
         },
 
-        'modal-background-color': {
-            light: '#d5e1ed',
-            dark: '#303030',
+        "modal-background-color": {
+            "light": "#d5e1ed",
+            "dark": "#303030"
         },
 
-        'success-color': {
-            light: '#84e897',
-            dark: '#41ab55',
+        "success-color": {
+            "light": "#84e897",
+            "dark": "#41ab55"
         },
 
-        'error-color': {
-            light: '#f59790',
-            dark: '#d44439',
+        "error-color": {
+            "light": "#f59790",
+            "dark": "#d44439"
         },
 
-        'starred-color': {
-            light: '#f4c430',
-            dark: '#f4c430',
+        "starred-color": {
+            "light": "#f4c430",
+            "dark": "#f4c430"
         },
 
-        'text-color': {
-            light: '#000000',
-            dark: '#E0E0E0',
+        "text-color": {
+            "light": "#000000",
+            "dark": "#E0E0E0"
         },
 
-        'text-color-secondary': {
-            light: '#6e6e6e',
-            dark: '#B0B0B0',
+        "text-color-secondary": {
+            "light": "#6e6e6e",
+            "dark": "#B0B0B0"
         },
 
-        'border-color': {
-            light: '#000000',
-            dark: '#444444',
+        "border-color": {
+            "light": "#000000",
+            "dark": "#444444"
         },
 
-        'primary-color': {
-            light: '#4285f4',
-            dark: '#1266f1',
+        "primary-color": {
+            "light": "#4285f4",
+            "dark": "#1266f1"
         },
 
-        'primary-color-dark': {
-            light: '#1266f1',
-            dark: '#224887',
+        "primary-color-dark": {
+            "light": "#1266f1",
+            "dark": "#224887"
         },
 
-        'font-family': {
-            light: 'Roboto, sans-serif',
-            dark: 'Roboto, sans-serif',
-        },
-    },
+        "font-family": {
+            "light": "Roboto, sans-serif",
+            "dark": "Roboto, sans-serif"
+        }
+    }
+}
     
