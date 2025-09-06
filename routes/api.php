@@ -10,7 +10,7 @@ Route::get("/colors", function () {
     return response()->json(["message" => "Missing theme parameter."], 400);
   }
 
-  $path = resource_path("json/{$theme}.json");
+  $path = resource_path("json/colors/{$theme}.json");
 
   if (!File::exists($path)) {
     return response()->json(["message" => "Theme not found."], 404);

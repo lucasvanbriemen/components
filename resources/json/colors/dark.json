@@ -1,0 +1,54 @@
+[
+  {
+    "name": "background-color",
+    "value": "#121212"
+  },
+  {
+    "name": "background-color-one",
+    "value": "#1E1E1E"
+  },
+  {
+    "name": "background-color-two",
+    "value": "#303030"
+  },
+  {
+    "name": "modal-background-color",
+    "value": "#303030"
+  },
+  {
+    "name": "success-color",
+    "value": "#41ab55"
+  },
+  {
+    "name": "error-color",
+    "value": "#d44439"
+  },
+  {
+    "name": "starred-color",
+    "value": "#f4c430"
+  },
+  {
+    "name": "text-color",
+    "value": "#E0E0E0"
+  },
+  {
+    "name": "text-color-secondary",
+    "value": "#B0B0B0"
+  },
+  {
+    "name": "border-color",
+    "value": "#444444"
+  },
+  {
+    "name": "primary-color",
+    "value": "#1266f1"
+  },
+  {
+    "name": "primary-color-value",
+    "value": "#224887"
+  },
+  {
+    "name": "font-family",
+    "value": "Roboto, sans-serif"
+  }
+]
