@@ -25,7 +25,7 @@
   $textAreaTypes = ['textarea'];
 @endphp
 
-@if (!in_array($type, $textTypes)) 
+@if (in_array($type, $textTypes))
 <div {!! $wrapperAttributes !!} class="input-wrapper text-input">
   <input
     type="{{ $type }}"
