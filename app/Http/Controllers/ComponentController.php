@@ -22,10 +22,9 @@ class ComponentController extends Controller
         $name = $request->query('name', 'input_name');
         $id = $request->query('id', 'input_id');
         $class = $request->query('class', null);
-        return "test";
         
         return view('components.input',
-            compact('type', 'label', 'placeholder', 'value', 'name', 'id')
+            compact('type', 'label', 'placeholder', 'value', 'name', 'id', 'class')
         );
     }
 }
