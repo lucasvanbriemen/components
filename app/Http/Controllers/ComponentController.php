@@ -10,12 +10,9 @@ class ComponentController extends Controller
     {
         $component = $request->path();
 
-
-        return "test";
-
         return $this->$component($request);
     }
-
+    
     public function input($request)
     {
         $type = $request->query('type', 'text');
@@ -24,8 +21,9 @@ class ComponentController extends Controller
         $value = $request->query('value', '');
         $name = $request->query('name', 'input_name');
         $id = $request->query('id', 'input_id');
-        $class = $request->query('class');
-
+        $class = $request->query('class', null);
+        return "test";
+        
         return view('components.input',
             compact('type', 'label', 'placeholder', 'value', 'name', 'id')
         );
