@@ -15,13 +15,13 @@ class ComponentController extends Controller
     
     public function input($request)
     {
-        $type = $request->query('type', 'text');
-        $label = $request->query('label', 'Input Label');
-        $placeholder = $request->query('placeholder', ' ');
-        $value = $request->query('value', '');
-        $name = $request->query('name', 'input_name');
-        $id = $request->query('id', 'input_id');
-        $class = $request->query('class', null);
+        $type = $request->input('type', 'text');
+        $label = $request->input('label', 'Input Label');
+        $placeholder = $request->input('placeholder', ' ');
+        $value = $request->input('value', '');
+        $name = $request->input('name', 'input_name');
+        $id = $request->input('id', 'input_id');
+        $class = $request->input('class', null);
         
         return view('components.input',
             compact('type', 'label', 'placeholder', 'value', 'name', 'id', 'class')
