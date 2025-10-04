@@ -10,6 +10,9 @@ class ComponentController extends Controller
     {
         $component = $request->path();
 
+
+        return "test";
+
         return $this->$component($request);
     }
 
