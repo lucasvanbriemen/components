@@ -3,7 +3,7 @@
   margin-top: 1rem;
 
   &.text-input {
-    input {
+    input, textarea {
       width: 100%;
 
       padding: 0.5rem 1rem;
@@ -14,7 +14,7 @@
       color: var(--text-color);
     }
 
-    input:-webkit-autofill {
+    input:-webkit-autofill, textarea:-webkit-autofill {
       box-shadow: 0 0 0px 1000px var(--background-color-one) inset !important;
       -webkit-text-fill-color: var(--text-color) !important;
     }
@@ -32,7 +32,9 @@
     }
 
     input:focus+label,
-    input:not(:placeholder-shown)+label {
+    input:not(:placeholder-shown)+label,
+    textarea:focus+label,
+    textarea:not(:placeholder-shown)+label {
       top: 0;
       font-size: 0.75rem;
 
