@@ -6,8 +6,8 @@
   'name' => $request->input('name', 'input_name'),
   'id' => $request->input('id', 'input_id'),
   'class' => $request->input('class', null),
-  'wrapperOptions' => [],
-  'inputOptions' => [],
+  'wrapperOptions' => request()->input('wrapperOptions', []),
+  'inputOptions' => request()->input('inputOptions', []),
 ])
 
 @php
