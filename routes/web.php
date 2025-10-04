@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\File;
+use App\Http\Controllers\ComponentController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/{any}', [ComponentController::class, 'index']);
