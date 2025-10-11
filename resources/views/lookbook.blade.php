@@ -183,9 +183,7 @@ fetch('/input', {
             <p>Customizable modal dialog with multiple size options and smooth animations.</p>
 
             <div class="preview">
-                <button class="btn" onclick="showModalExample('small')">Small Modal</button>
-                <button class="btn" onclick="showModalExample('medium')">Medium Modal</button>
-                <button class="btn" onclick="showModalExample('large')">Large Modal</button>
+                <button class="btn" onclick="showModalExample('medium')">Modal</button>
             </div>
 
             <div id="modal-examples"></div>
@@ -238,7 +236,7 @@ fetch('/modal', {
         loadInputComponent('textarea', 'Message', 'textarea-preview');
 
         // Modal example function
-        async function showModalExample(size) {
+        async function showModalExample() {
             const response = await fetch('/modal', {
                 method: 'POST',
                 headers: {
@@ -246,9 +244,8 @@ fetch('/modal', {
                     'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
                 },
                 body: JSON.stringify({
-                    title: `${size.charAt(0).toUpperCase() + size.slice(1)} Modal Example`,
-                    content: `<p>This is a ${size} modal. It demonstrates the modal component with ${size} size settings.</p><p>Click outside or press the close button to dismiss.</p>`,
-                    size: size,
+                    title: `Modal Example`,
+                    content: `<p>This is a modal. It demonstrates the modal component.</p><p>Click outside or press the close button to dismiss.</p>`,
                     showCloseButton: true
                 })
             });
@@ -257,31 +254,17 @@ fetch('/modal', {
             const modalContainer = document.getElementById('modal-examples');
             modalContainer.innerHTML = html;
 
-            // Show modal
-            setTimeout(() => {
-                const backdrop = document.querySelector('.modal-backdrop');
-                if (backdrop) {
-                    backdrop.classList.add('modal-open');
+            // Extract and execute scripts from the inserted HTML
+            const scripts = modalContainer.querySelectorAll('script');
+            scripts.forEach(script => {
+                const newScript = document.createElement('script');
+                if (script.src) {
+                    newScript.src = script.src;
+                } else {
+                    newScript.textContent = script.textContent;
                 }
-            }, 10);
-
-            // Close modal on backdrop click
-            document.querySelector('.modal-backdrop').addEventListener('click', function(e) {
-                if (e.target === this) {
-                    this.classList.remove('modal-open');
-                    setTimeout(() => {
-                        modalContainer.innerHTML = '';
-                    }, 300);
-                }
-            });
-
-            // Close modal on close button click
-            document.querySelector('[data-close-modal]')?.addEventListener('click', function() {
-                const backdrop = document.querySelector('.modal-backdrop');
-                backdrop.classList.remove('modal-open');
-                setTimeout(() => {
-                    modalContainer.innerHTML = '';
-                }, 300);
+                document.body.appendChild(newScript);
+                script.remove(); // Remove the non-executing script tag
             });
         }
     </script>

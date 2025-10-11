@@ -2,12 +2,13 @@
   'title' => $request->input('title', 'Modal Title'),
   'content' => $request->input('content', 'Modal content goes here.'),
   'showCloseButton' => $request->input('showCloseButton', true),
-  'size' => $request->input('size', 'medium'),
   'id' => $request->input('id', 'modal_' . uniqid()),
   'backdropClass' => $request->input('backdropClass', null),
   'modalClass' => $request->input('modalClass', null),
   'modalOptions' => request()->input('modalOptions', []),
 ])
+
+@vite('resources/scss/modal.scss')
 
 @php
   $modalAttributes = collect($modalOptions)
@@ -16,7 +17,7 @@
 @endphp
 
 <div class="modal-backdrop {{ $backdropClass }}" id="{{ $id }}-backdrop" data-modal-id="{{ $id }}">
-  <div class="modal-container modal-{{ $size }} {{ $modalClass }}" {!! $modalAttributes !!}>
+  <div class="modal-container {{ $modalClass }}" {!! $modalAttributes !!}>
     <div class="modal-header">
       <h3 class="modal-title">{{ $title }}</h3>
       @if($showCloseButton)
@@ -34,4 +35,42 @@
   </div>
 </div>
 
-@vite('resources/scss/modal.scss')
+
+<script>
+  alert('test')
+
+  let Modal = {
+    CONTAINER_SELECTOR: ".modal-container",
+    CLOSE_BUTTON_SELECTOR: ".close-button",
+    OPEN_CLASS: "modal-open",
+
+    init: function () {
+      $(Modal.CONTAINER_SELECTOR).on("click", function (event) {
+        if (event.target === this) {
+          Modal.close(this.closest(Modal.CONTAINER_SELECTOR));
+        }
+      });
+
+      $(Modal.CLOSE_BUTTON_SELECTOR).on("click", function () {
+        Modal.close(this.closest(Modal.CONTAINER_SELECTOR));
+      });
+    },
+
+    open: function (selector) {
+      $(selector).addClass(Modal.OPEN_CLASS);
+
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      if (scrollbarWidth > 0) {
+        $("html").css("padding-right", scrollbarWidth + "px");
+        $("body").css("overflow", "hidden");
+      }
+    },
+
+    close: function (selector) {
+      $(selector).removeClass(Modal.OPEN_CLASS);
+
+      $("html").css("padding-right", "");
+      $("body").css("overflow", "");
+    }
+  };
+</script>
