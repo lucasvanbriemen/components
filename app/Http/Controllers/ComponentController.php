@@ -12,11 +12,19 @@ class ComponentController extends Controller
 
         return $this->$component($request);
     }
-    
+
     public function input($request)
     {
-        
+
         return view('components.input',
+            compact('request')
+        );
+    }
+
+    public function modal($request)
+    {
+
+        return view('components.modal',
             compact('request')
         );
     }
