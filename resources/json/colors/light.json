@@ -1,54 +1,18 @@
 [
-  {
-    "name": "background-color",
-    "value": "#ffffff"
-  },
-  {
-    "name": "background-color-one",
-    "value": "#d5e1ed"
-  },
-  {
-    "name": "background-color-two",
-    "value": "#aab5bf"
-  },
-  {
-    "name": "modal-background-color",
-    "value": "#d5e1ed"
-  },
-  {
-    "name": "success-color",
-    "value": "#84e897"
-  },
-  {
-    "name": "error-color",
-    "value": "#f59790"
-  },
-  {
-    "name": "starred-color",
-    "value": "#f4c430"
-  },
-  {
-    "name": "text-color",
-    "value": "#000000"
-  },
-  {
-    "name": "text-color-secondary",
-    "value": "#6e6e6e"
-  },
-  {
-    "name": "border-color",
-    "value": "#000000"
-  },
-  {
-    "name": "primary-color",
-    "value": "#4285f4"
-  },
-  {
-    "name": "primary-color-dark",
-    "value": "#1266f1"
-  },
-  {
-    "name": "font-family",
-    "value": "Roboto, sans-serif"
-  }
+  { "name": "background-color", "value": "#FAF8FF" },
+  { "name": "background-color-one", "value": "#ECEDF9" },
+  { "name": "background-color-two", "value": "#E7E7F3" },
+  { "name": "modal-background-color", "value": "#F2F3FF" },
+  { "name": "success-color", "value": "#A6BDFE" },
+  { "name": "error-color", "value": "#BA1A1A" },
+  { "name": "starred-color", "value": "#A442C7" },
+
+  { "name": "text-color", "value": "#191B24" },
+  { "name": "text-color-secondary", "value": "#424655" },
+  { "name": "border-color", "value": "#727786" },
+
+  { "name": "primary-color", "value": "#004FC3" },
+  { "name": "primary-color-dark", "value": "#1266F1" },
+
+  { "name": "font-family", "value": "Roboto, sans-serif" }
 ]
