@@ -13,6 +13,11 @@
 
   { "name": "primary-color", "value": "#004FC3" },
   { "name": "primary-color-dark", "value": "#1266F1" },
+  { "name": "primary-color-light", "value": "#1b5fc2" },
+
+  { "name": "secondary-color", "value": "#0097A7" },
+  { "name": "secondary-color-dark", "value": "#00838F" },
+  { "name": "secondary-color-light", "value": "#4DD0E1" },
 
   { "name": "font-family", "value": "Roboto, sans-serif" }
 ]
