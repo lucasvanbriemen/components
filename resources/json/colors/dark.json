@@ -3,8 +3,8 @@
   { "name": "background-color-one", "value": "#191B24" },
   { "name": "background-color-two", "value": "#272A32" },
   { "name": "modal-background-color", "value": "#1D1F28" },
-  { "name": "success-color", "value": "#9DB4F5" },
-  { "name": "error-color", "value": "#FFB4AB" },
+  { "name": "success-color", "value": "#4a824b" },
+  { "name": "error-color", "value": "#a12a34" },
   { "name": "starred-color", "value": "#EEB0FF" },
 
   { "name": "text-color", "value": "#E1E2ED" },
@@ -15,9 +15,9 @@
   { "name": "primary-color-dark", "value": "#0056D2" },
   { "name": "primary-color-light", "value": "#1b5fc2" },
 
-  { "name": "secondary-color", "value": "#1a2c63" },
-  { "name": "secondary-color-dark", "value": "#101b3d" },
-  { "name": "secondary-color-light", "value": "#27408c" },
+  { "name": "secondary-color", "value": "#2b8f17" },
+  { "name": "secondary-color-dark", "value": "#18520c" },
+  { "name": "secondary-color-light", "value": "#36b31d" },
 
   { "name": "font-family", "value": "Roboto, sans-serif" }
 ]
