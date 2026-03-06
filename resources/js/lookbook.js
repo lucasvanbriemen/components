@@ -1,6 +1,6 @@
-import { mount } from 'svelte';
-import Input from '../../packages/svelte-input/src/lib/Input.svelte';
 import ButtonPreview from './ButtonPreview.svelte';
+import Input from '../../packages/svelte-input/src/lib/Input.svelte';
+import { mount } from 'svelte';
 
 // Mount text input
 mount(Input, {
@@ -24,12 +24,6 @@ mount(Input, {
 mount(Input, {
     target: document.getElementById('preview-textarea'),
     props: { type: 'textarea', label: 'Message', id: 'textarea-example', placeholder: ' ' }
-});
-
-// Mount checkbox
-mount(Input, {
-    target: document.getElementById('preview-checkbox'),
-    props: { type: 'checkbox', label: 'Accept terms', id: 'checkbox-example' }
 });
 
 // Mount button

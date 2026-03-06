@@ -113,11 +113,6 @@
                     <h3>Textarea</h3>
                     <div id="preview-textarea"></div>
                 </div>
-
-                <div class="variant">
-                    <h3>Checkbox</h3>
-                    <div id="preview-checkbox"></div>
-                </div>
             </div>
         </div>
 
