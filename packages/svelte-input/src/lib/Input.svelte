@@ -71,11 +71,6 @@
         color: var(--text-color, #000);
       }
 
-      input:-webkit-autofill, textarea:-webkit-autofill {
-        box-shadow: 0 0 0px 1000px var(--background-color-one, #fff) inset !important;
-        -webkit-text-fill-color: var(--text-color, #000) !important;
-      }
-
       label {
         position: absolute;
         top: 50%;
