@@ -54,20 +54,6 @@
       {label}
     </label>
   </div>
-{:else if type === 'checkbox'}
-  <div class="input-wrapper checkbox-input">
-    <input
-      type="checkbox"
-      {name}
-      {id}
-      bind:checked={value}
-      {...rest}
-    >
-    <span class="checkmark"></span>
-    <label for={id}>
-      {label}
-    </label>
-  </div>
 {/if}
 
 <style lang="scss">
@@ -78,7 +64,7 @@
     &.text-input {
       input, textarea {
         width: 100%;
-        padding: 0.5rem 1rem;
+        padding:1rem;
         border-radius: 1rem;
         border: 1px solid var(--border-color, #ccc);
         background-color: var(--background-color-one, #fff);
@@ -96,23 +82,27 @@
         left: 1rem;
         transform: translateY(-50%);
         pointer-events: none;
-        background-color: transparent;
+        background-color: var(--background-color-one, #fff);
         color: var(--text-color, #000);
         border: none;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease;
       }
 
       input:focus + label,
       input:not(:placeholder-shown) + label,
       textarea:focus + label,
       textarea:not(:placeholder-shown) + label {
-        top: 0;
+        top: 2px;
         font-size: 0.75rem;
         background-color: var(--background-color-one, #fff);
-        border: 1px solid var(--primary-color, #6366f1);
         color: var(--text-color, #000);
-        padding: 0.25rem 0.5rem;
-        border-radius: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      input:focus, textarea:focus {
+        outline: none;
+        border: 2px solid var(--primary-color, #007BFF);
+        padding: calc(1rem - 1px);
       }
     }
   }
