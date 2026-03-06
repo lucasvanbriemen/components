@@ -115,18 +115,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="component-section">
-            <h2>Button Component</h2>
-            <p>Customizable button component with variant support.</p>
-
-            <div class="component-grid">
-                <div class="variant">
-                    <h3>Call to Action</h3>
-                    <div id="preview-button"></div>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 </html>

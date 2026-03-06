@@ -1,4 +1,3 @@
-import ButtonPreview from './ButtonPreview.svelte';
 import Input from '../../packages/svelte-input/src/lib/Input.svelte';
 import { mount } from 'svelte';
 
@@ -24,9 +23,4 @@ mount(Input, {
 mount(Input, {
     target: document.getElementById('preview-textarea'),
     props: { type: 'textarea', label: 'Message', id: 'textarea-example', placeholder: ' ' }
-});
-
-// Mount button
-mount(ButtonPreview, {
-    target: document.getElementById('preview-button')
 });
