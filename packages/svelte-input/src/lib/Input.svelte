@@ -11,48 +11,20 @@
    *   [key: string]: any
    * }}
    */
-  let {
-    type = 'text',
-    label = 'Input Label',
-    placeholder = ' ',
-    value = $bindable(''),
-    name = '',
-    id = '',
-    class: className = '',
-    ...rest
-  } = $props();
+  let { type = 'text', label = 'Input Label', placeholder = ' ', value = $bindable(''), name = '', id = '', class: className = '', ...rest } = $props();
 
   const textTypes = ['text', 'email', 'password', 'search', 'tel', 'url'];
 </script>
 
 {#if type === 'textarea'}
-  <div class="input-wrapper text-input">
-    <textarea
-      {name}
-      {id}
-      class="{className} input-textarea"
-      {placeholder}
-      bind:value
-      {...rest}
-    ></textarea>
-    <label for={id} class="input-label">
-      {label}
-    </label>
+  <div class="input-wrapper">
+    <textarea {name} {id} class="{className} input-textarea" {placeholder} bind:value {...rest}></textarea>
+    <label for={id} class="input-label">{label}</label>
   </div>
 {:else if textTypes.includes(type)}
-  <div class="input-wrapper text-input">
-    <input
-      {type}
-      {name}
-      {id}
-      class="{className} input-text"
-      {placeholder}
-      bind:value
-      {...rest}
-    >
-    <label for={id} class="input-label">
-      {label}
-    </label>
+  <div class="input-wrapper">
+    <input {type} {name} {id} class="{className} input-text" {placeholder} bind:value {...rest}>
+    <label for={id} class="input-label">{label}</label>
   </div>
 {/if}
 
@@ -61,7 +33,6 @@
     position: relative;
     margin-top: 1rem;
 
-    &.text-input {
       input, textarea {
         width: 100%;
         padding:1rem;
@@ -99,6 +70,5 @@
         border: 2px solid var(--primary-color, #007BFF);
         padding: calc(1rem - 1px);
       }
-    }
   }
 </style>
