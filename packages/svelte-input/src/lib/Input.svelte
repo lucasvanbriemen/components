@@ -115,57 +115,5 @@
         border-radius: 1rem;
       }
     }
-
-    &.checkbox-input {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-
-      input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        position: absolute;
-      }
-
-      label {
-        cursor: pointer;
-        color: var(--text-color, #000);
-        user-select: none;
-      }
-
-      .checkmark {
-        width: 1.5rem;
-        height: 1.5rem;
-        background-color: var(--background-color-one, #fff);
-        border-radius: 0.5rem;
-        border: 1px solid var(--border-color, #ccc);
-        display: inline-block;
-        position: relative;
-        cursor: pointer;
-        flex-shrink: 0;
-
-        &::after {
-          position: absolute;
-          left: 8px;
-          top: 3px;
-          width: 7px;
-          height: 14px;
-          border: solid white;
-          border-width: 0 2px 2px 0;
-          transform: rotate(45deg);
-          content: "";
-          display: none;
-        }
-      }
-
-      input:checked + .checkmark {
-        background-color: var(--primary-color, #6366f1);
-
-        &::after {
-          display: block;
-        }
-      }
-    }
   }
 </style>
