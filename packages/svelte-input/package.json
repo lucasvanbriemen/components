@@ -1,5 +1,5 @@
 {
-  "name": "@lucasvanbriemen/compoments",
+  "name": "@lucasvanbriemen/components",
   "version": "0.1.0",
   "description": "A Svelte input component with floating labels",
   "type": "module",

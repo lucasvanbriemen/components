@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import fg from 'fast-glob';
 import laravel from 'laravel-vite-plugin';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 const files = fg.sync([
     'resources/js/**/*.js',
@@ -13,5 +14,6 @@ export default defineConfig({
             input: files,
             refresh: true,
         }),
+        svelte(),
     ],
 });
