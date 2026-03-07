@@ -32,10 +32,12 @@
   .input-wrapper {
     position: relative;
     margin-top: 1rem;
+    box-sizing: border-box;
 
       input, textarea {
         width: 100%;
-        padding:1rem;
+        padding: 1rem;
+        box-sizing: border-box;
         border-radius: 1rem;
         border: 1px solid var(--border-color, #ccc);
         background-color: var(--background-color-one, #fff);
@@ -51,7 +53,7 @@
         background-color: var(--background-color-one, #fff);
         color: var(--text-color, #000);
         border: none;
-        transition: all 0.3s ease;
+        transition: top left transform 0.2s ease-in-out;
       }
 
       input:focus + label,
