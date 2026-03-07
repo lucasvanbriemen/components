@@ -1,6 +1,6 @@
 {
   "name": "@lucasvanbriemen/components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Svelte input component with floating labels",
   "type": "module",
   "svelte": "./dist/index.js",
