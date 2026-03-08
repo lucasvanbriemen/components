@@ -35,4 +35,7 @@ return [
         ],
     ],
 
+    'pushcut' => [
+        'url' => env('PUSHCUT_URL'),
+    ],
 ];
