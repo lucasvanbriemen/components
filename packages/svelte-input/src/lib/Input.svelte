@@ -34,43 +34,43 @@
     margin-top: 1rem;
     box-sizing: border-box;
 
-      input, textarea {
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
-        border-radius: 1rem;
-        border: 1px solid var(--border-color, #ccc);
-        background-color: var(--background-color-one, #fff);
-        color: var(--text-color, #000);
-      }
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      border: 1px solid var(--border-color, #ccc);
+      background-color: var(--background-color-one, #fff);
+      color: var(--text-color, #000);
+    }
 
-      label {
-        position: absolute;
-        top: 50%;
-        left: 1rem;
-        transform: translateY(-50%);
-        pointer-events: none;
-        background-color: var(--background-color-one, #fff);
-        color: var(--text-color, #000);
-        border: none;
-        transition: top left transform 0.2s ease-in-out;
-      }
+    label {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      pointer-events: none;
+      background-color: var(--background-color-one, #fff);
+      color: var(--text-color, #000);
+      border: none;
+      transition: top left transform 0.2s ease-in-out;
+    }
 
-      input:focus + label,
-      input:not(:placeholder-shown) + label,
-      textarea:focus + label,
-      textarea:not(:placeholder-shown) + label {
-        top: 2px;
-        font-size: 0.75rem;
-        background-color: var(--background-color-one, #fff);
-        color: var(--text-color, #000);
-        padding: 0 0.5rem;
-      }
+    input:focus + label,
+    input:not(:placeholder-shown) + label,
+    textarea:focus + label,
+    textarea:not(:placeholder-shown) + label {
+      top: 2px;
+      font-size: 0.75rem;
+      background-color: var(--background-color-one, #fff);
+      color: var(--text-color, #000);
+      padding: 0 0.5rem;
+    }
 
-      input:focus, textarea:focus {
-        outline: none;
-        border: 2px solid var(--primary-color, #007BFF);
-        padding: calc(1rem - 1px);
-      }
+    input:focus, textarea:focus {
+      outline: none;
+      border: 2px solid var(--primary-color, #007BFF);
+      padding: calc(1rem - 1px);
+    }
   }
 </style>
