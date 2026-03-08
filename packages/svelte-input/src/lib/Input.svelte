@@ -45,7 +45,7 @@
       background-color: var(--background-color-one, #fff);
       color: var(--text-color, #000);
       border: none;
-      transition: top left transform 0.2s ease-in-out;
+      transition: all 0.3s ease;
     }
 
     input:focus + label,
