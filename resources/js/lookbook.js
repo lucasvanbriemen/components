@@ -18,9 +18,3 @@ mount(Input, {
     target: document.getElementById('preview-password'),
     props: { type: 'password', label: 'Password', id: 'password-example', placeholder: ' ' }
 });
-
-// Mount textarea
-mount(Input, {
-    target: document.getElementById('preview-textarea'),
-    props: { type: 'textarea', label: 'Message', id: 'textarea-example', placeholder: ' ' }
-});

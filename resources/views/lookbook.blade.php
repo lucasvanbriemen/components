@@ -108,11 +108,6 @@
                     <h3>Password Input</h3>
                     <div id="preview-password"></div>
                 </div>
-
-                <div class="variant">
-                    <h3>Textarea</h3>
-                    <div id="preview-textarea"></div>
-                </div>
             </div>
         </div>
     </div>
