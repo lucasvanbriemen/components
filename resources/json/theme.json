@@ -1,0 +1,211 @@
+{
+  "primary": {
+    "dark": "rgb(177 209 138)",
+    "light": "rgb(76 102 43)"
+  },
+  "on-primary": {
+    "dark": "rgb(31 55 1)",
+    "light": "rgb(255 255 255)"
+  },
+  "primary-container": {
+    "dark": "rgb(53 78 22)",
+    "light": "rgb(205 237 163)"
+  },
+  "on-primary-container": {
+    "dark": "rgb(205 237 163)",
+    "light": "rgb(53 78 22)"
+  },
+
+  "secondary": {
+    "dark": "rgb(191 203 173)",
+    "light": "rgb(88 98 73)"
+  },
+  "on-secondary": {
+    "dark": "rgb(42 51 30)",
+    "light": "rgb(255 255 255)"
+  },
+  "secondary-container": {
+    "dark": "rgb(64 74 51)",
+    "light": "rgb(220 231 200)"
+  },
+  "on-secondary-container": {
+    "dark": "rgb(220 231 200)",
+    "light": "rgb(64 74 51)"
+  },
+
+  "tertiary": {
+    "dark": "rgb(160 208 203)",
+    "light": "rgb(56 102 99)"
+  },
+  "on-tertiary": {
+    "dark": "rgb(0 55 53)",
+    "light": "rgb(255 255 255)"
+  },
+  "tertiary-container": {
+    "dark": "rgb(31 78 75)",
+    "light": "rgb(188 236 231)"
+  },
+  "on-tertiary-container": {
+    "dark": "rgb(188 236 231)",
+    "light": "rgb(31 78 75)"
+  },
+
+  "error": {
+    "dark": "rgb(255 180 171)",
+    "light": "rgb(186 26 26)"
+  },
+  "on-error": {
+    "dark": "rgb(105 0 5)",
+    "light": "rgb(255 255 255)"
+  },
+  "error-container": {
+    "dark": "rgb(147 0 10)",
+    "light": "rgb(255 218 214)"
+  },
+  "on-error-container": {
+    "dark": "rgb(255 218 214)",
+    "light": "rgb(147 0 10)"
+  },
+
+  "surface-tint": {
+    "dark": "rgb(177 209 138)",
+    "light": "rgb(76 102 43)"
+  },
+
+  "background": {
+    "dark": "rgb(18 20 14)",
+    "light": "rgb(249 250 239)"
+  },
+  "on-background": {
+    "dark": "rgb(226 227 216)",
+    "light": "rgb(26 28 22)"
+  },
+
+  "surface": {
+    "dark": "rgb(18 20 14)",
+    "light": "rgb(249 250 239)"
+  },
+  "on-surface": {
+    "dark": "rgb(226 227 216)",
+    "light": "rgb(26 28 22)"
+  },
+  "surface-variant": {
+    "dark": "rgb(68 72 61)",
+    "light": "rgb(225 228 213)"
+  },
+  "on-surface-variant": {
+    "dark": "rgb(197 200 186)",
+    "light": "rgb(68 72 61)"
+  },
+
+  "outline": {
+    "dark": "rgb(143 146 133)",
+    "light": "rgb(117 121 108)"
+  },
+  "outline-variant": {
+    "dark": "rgb(68 72 61)",
+    "light": "rgb(197 200 186)"
+  },
+
+  "shadow": {
+    "dark": "rgb(0 0 0)",
+    "light": "rgb(0 0 0)"
+  },
+  "scrim": {
+    "dark": "rgb(0 0 0)",
+    "light": "rgb(0 0 0)"
+  },
+
+  "inverse-surface": {
+    "dark": "rgb(226 227 216)",
+    "light": "rgb(47 49 42)"
+  },
+  "inverse-on-surface": {
+    "dark": "rgb(47 49 42)",
+    "light": "rgb(241 242 230)"
+  },
+  "inverse-primary": {
+    "dark": "rgb(76 102 43)",
+    "light": "rgb(177 209 138)"
+  },
+
+  "primary-fixed": {
+    "dark": "rgb(205 237 163)",
+    "light": "rgb(205 237 163)"
+  },
+  "on-primary-fixed": {
+    "dark": "rgb(16 32 0)",
+    "light": "rgb(16 32 0)"
+  },
+  "primary-fixed-dim": {
+    "dark": "rgb(177 209 138)",
+    "light": "rgb(177 209 138)"
+  },
+  "on-primary-fixed-variant": {
+    "dark": "rgb(53 78 22)",
+    "light": "rgb(53 78 22)"
+  },
+
+  "secondary-fixed": {
+    "dark": "rgb(220 231 200)",
+    "light": "rgb(220 231 200)"
+  },
+  "on-secondary-fixed": {
+    "dark": "rgb(21 30 11)",
+    "light": "rgb(21 30 11)"
+  },
+  "secondary-fixed-dim": {
+    "dark": "rgb(191 203 173)",
+    "light": "rgb(191 203 173)"
+  },
+  "on-secondary-fixed-variant": {
+    "dark": "rgb(64 74 51)",
+    "light": "rgb(64 74 51)"
+  },
+
+  "tertiary-fixed": {
+    "dark": "rgb(188 236 231)",
+    "light": "rgb(188 236 231)"
+  },
+  "on-tertiary-fixed": {
+    "dark": "rgb(0 32 30)",
+    "light": "rgb(0 32 30)"
+  },
+  "tertiary-fixed-dim": {
+    "dark": "rgb(160 208 203)",
+    "light": "rgb(160 208 203)"
+  },
+  "on-tertiary-fixed-variant": {
+    "dark": "rgb(31 78 75)",
+    "light": "rgb(31 78 75)"
+  },
+
+  "surface-dim": {
+    "dark": "rgb(18 20 14)",
+    "light": "rgb(218 219 208)"
+  },
+  "surface-bright": {
+    "dark": "rgb(56 58 50)",
+    "light": "rgb(249 250 239)"
+  },
+  "surface-container-lowest": {
+    "dark": "rgb(12 15 9)",
+    "light": "rgb(255 255 255)"
+  },
+  "surface-container-low": {
+    "dark": "rgb(26 28 22)",
+    "light": "rgb(243 244 233)"
+  },
+  "surface-container": {
+    "dark": "rgb(30 32 26)",
+    "light": "rgb(238 239 227)"
+  },
+  "surface-container-high": {
+    "dark": "rgb(40 43 36)",
+    "light": "rgb(232 233 222)"
+  },
+  "surface-container-highest": {
+    "dark": "rgb(51 54 46)",
+    "light": "rgb(226 227 216)"
+  }
+}
