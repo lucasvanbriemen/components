@@ -67,6 +67,40 @@
     "light": "rgb(147 0 10)"
   },
 
+  "success": {
+    "dark": "rgb(141 215 161)",
+    "light": "rgb(30 109 60)"
+  },
+  "on-success": {
+    "dark": "rgb(0 57 22)",
+    "light": "rgb(255 255 255)"
+  },
+  "success-container": {
+    "dark": "rgb(0 84 36)",
+    "light": "rgb(168 244 184)"
+  },
+  "on-success-container": {
+    "dark": "rgb(168 244 184)",
+    "light": "rgb(0 33 11)"
+  },
+
+  "warning": {
+    "dark": "rgb(255 184 92)",
+    "light": "rgb(141 88 0)"
+  },
+  "on-warning": {
+    "dark": "rgb(73 43 0)",
+    "light": "rgb(255 255 255)"
+  },
+  "warning-container": {
+    "dark": "rgb(105 64 0)",
+    "light": "rgb(255 221 178)"
+  },
+  "on-warning-container": {
+    "dark": "rgb(255 221 178)",
+    "light": "rgb(45 22 0)"
+  },
+
   "surface-tint": {
     "dark": "rgb(177 209 138)",
     "light": "rgb(76 102 43)"
