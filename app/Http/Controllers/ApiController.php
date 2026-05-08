@@ -10,7 +10,7 @@ class ApiController extends Controller
 {
     public function getThemeColors(Request $request)
     {
-        $path = resource_path("json/colors/theme.json");
+        $path = resource_path("json/theme.json");
         $colors = File::get($path);
 
         return response($colors, 200)
