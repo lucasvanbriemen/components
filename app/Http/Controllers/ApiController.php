@@ -11,10 +11,25 @@ class ApiController extends Controller
     public function getThemeColors(Request $request)
     {
         $path = resource_path("json/theme.json");
-        $colors = File::get($path);
+        $colors = json_decode(File::get($path), true);
 
-        return response($colors, 200)
-            ->header("Content-Type", "application/json");
+        $withStates = [];
+        foreach ($colors as $name => $modes) {
+            $withStates[$name] = $modes;
+            foreach ([8, 12] as $opacity) {
+                $withStates["{$name}-{$opacity}"] = [
+                    "dark" => $this->withAlpha($modes["dark"], $opacity / 100),
+                    "light" => $this->withAlpha($modes["light"], $opacity / 100),
+                ];
+            }
+        }
+
+        return response()->json($withStates);
+    }
+
+    private function withAlpha(string $rgb, float $alpha): string
+    {
+        return preg_replace('/\)\s*$/', " / {$alpha})", $rgb);
     }
 
     public function sendNotification(Request $request)
