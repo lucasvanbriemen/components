@@ -16,10 +16,11 @@ class ApiController extends Controller
         $withStates = [];
         foreach ($colors as $name => $modes) {
             $withStates[$name] = $modes;
-            foreach ([8, 12] as $opacity) {
-                $withStates["{$name}-{$opacity}"] = [
-                    "dark" => $this->withAlpha($modes["dark"], $opacity / 100),
-                    "light" => $this->withAlpha($modes["light"], $opacity / 100),
+            foreach ([8, 12] as $transparency) {
+                $alpha = (100 - $transparency) / 100;
+                $withStates["{$name}-{$transparency}"] = [
+                    "dark" => $this->withAlpha($modes["dark"], $alpha),
+                    "light" => $this->withAlpha($modes["light"], $alpha),
                 ];
             }
         }
