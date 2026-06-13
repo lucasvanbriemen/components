@@ -10,16 +10,10 @@ use Illuminate\Support\Str;
 
 class FileController extends Controller
 {
-    /**
-     * The disk and base directory that all uploads live under.
-     */
     private const DISK = 'public';
 
     private const BASE_DIR = 'uploads';
 
-    /**
-     * List every stored file with its metadata. Public — anyone may read.
-     */
     public function index(): JsonResponse
     {
         $disk = Storage::disk(self::DISK);
@@ -32,12 +26,6 @@ class FileController extends Controller
         return response()->json(['files' => $files]);
     }
 
-    /**
-     * Store one or more uploaded files. Gated behind IsLoggedIn.
-     *
-     * Files are namespaced by upload date and given a collision-proof name,
-     * matching the convention used by the sibling `github` project.
-     */
     public function store(Request $request): JsonResponse
     {
         $request->validate([
@@ -66,10 +54,6 @@ class FileController extends Controller
         return response()->json(['files' => $out], 201);
     }
 
-    /**
-     * Replace the contents of an existing file in place. Gated behind
-     * IsLoggedIn. The stored path (and therefore its URL) stays stable.
-     */
     public function update(Request $request, string $path): JsonResponse
     {
         $request->validate([
@@ -86,10 +70,6 @@ class FileController extends Controller
         return response()->json(['file' => $this->describe($path)]);
     }
 
-    /**
-     * Stream a stored file. Public — inline by default, or as an attachment
-     * when `?download` is present.
-     */
     public function show(Request $request, string $path)
     {
         $path = ltrim($path, '/');
@@ -107,9 +87,6 @@ class FileController extends Controller
         ]);
     }
 
-    /**
-     * Build the metadata payload returned for a single stored file.
-     */
     private function describe(string $path, ?string $name = null): array
     {
         $disk = Storage::disk(self::DISK);
