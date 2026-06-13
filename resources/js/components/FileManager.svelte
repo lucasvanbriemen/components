@@ -63,20 +63,6 @@
     }
   }
 
-  async function deleteFile(file) {
-    if (!confirm(`Delete "${file.name}"?`)) return;
-
-    error = '';
-    try {
-      await api.delete(`/api/files/${file.path}`);
-      files = files.filter((f) => f.path !== file.path);
-    } catch (e) {
-      error = e.message === 'Unauthenticated.'
-        ? 'You need to be logged in to delete files.'
-        : (e.message || 'Delete failed.');
-    }
-  }
-
   function onDrop(event) {
     event.preventDefault();
     dragging = false;
@@ -154,7 +140,6 @@
                 hidden
               />
             </label>
-            <button class="btn btn-danger" onclick={() => deleteFile(file)}>Delete</button>
           </div>
         </li>
       {/each}
@@ -289,14 +274,6 @@
 
     &:hover {
       border-color: var(--primary-color, #007BFF);
-    }
-  }
-
-  .btn-danger {
-    color: #dc2626;
-
-    &:hover {
-      border-color: #dc2626;
     }
   }
 </style>

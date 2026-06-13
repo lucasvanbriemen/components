@@ -16,7 +16,4 @@ Route::middleware(IsLoggedIn::class)->group(function () {
     Route::post("/files/{path}", [FileController::class, "update"])
         ->where("path", ".*")
         ->name("files.update");
-    Route::delete("/files/{path}", [FileController::class, "destroy"])
-        ->where("path", ".*")
-        ->name("files.destroy");
 });

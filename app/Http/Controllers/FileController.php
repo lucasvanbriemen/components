@@ -109,21 +109,6 @@ class FileController extends Controller
     }
 
     /**
-     * Delete a stored file. Gated behind IsLoggedIn.
-     */
-    public function destroy(string $path): JsonResponse
-    {
-        $path = ltrim($path, '/');
-        $disk = Storage::disk(self::DISK);
-
-        abort_unless($this->isAllowed($path) && $disk->exists($path), 404);
-
-        $disk->delete($path);
-
-        return response()->json(['deleted' => $path]);
-    }
-
-    /**
      * Build the metadata payload returned for a single stored file.
      */
     private function describe(string $path, ?string $name = null): array
