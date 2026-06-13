@@ -131,7 +131,6 @@
             <span class="file-sub">{file.type} · {formatSize(file.size)}</span>
           </div>
           <div class="file-actions">
-            <a class="btn" href={`${file.url}?download`}>Download</a>
             <label class="btn">
               Replace
               <input

@@ -99,11 +99,10 @@ class FileController extends Controller
 
         $mime = $disk->mimeType($path) ?: 'application/octet-stream';
         $filename = basename($path);
-        $disposition = $request->has('download') ? 'attachment' : 'inline';
 
         return new Response($disk->get($path), 200, [
             'Content-Type' => $mime,
-            'Content-Disposition' => $disposition.'; filename="'.$filename.'"',
+            'Content-Disposition' => 'inline; filename="'.$filename.'"',
             'Cache-Control' => 'public, max-age=31536000',
         ]);
     }
