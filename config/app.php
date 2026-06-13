@@ -17,6 +17,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Local Developer Session Token
+    |--------------------------------------------------------------------------
+    |
+    | Used by the IsLoggedIn middleware in the local environment to stand in
+    | for a real session token issued by the shared login service.
+    |
+    */
+
+    'user_token' => env('DEV_TOKEN'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |
